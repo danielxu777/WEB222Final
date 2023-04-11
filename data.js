@@ -2,25 +2,25 @@
 // so other scripts can access it at runtime.
 window.reviewData = [
     {
-        name: "John Doe",
+        name: "John Cena",
         date: "2022-10-10",
         rating: 4,
         review: "Chinese Chess is a great game that requires both strategy and skill. I always enjoy playing it with my friends."
     },
     {
-        name: "Jane Smith",
+        name: "Jane Young",
         date: "2022-12-01",
         rating: 5,
         review: "Chinese Chess is an amazing game with a rich history and culture behind it. I love learning about the different strategies and moves."
     },
     {
-        name: "Bob Johnson",
+        name: "Daniel Wu",
         date: "2023-01-15",
         rating: 3,
         review: "Chinese Chess is a fun game to play, but I still struggle with some of the more advanced moves. It definitely takes some practice."
     },
     {
-        name: "Sarah Lee",
+        name: "Bruce Lee",
         date: "2023-02-28",
         rating: 5,
         review: "Chinese Chess is one of my favorite games of all time. I love the challenge of trying to outsmart my opponent."
