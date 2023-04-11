@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Chess - Reviews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="info.html">Info</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="about.html">About</a>
+        </nav>
+        <h1>Chinese Chess</h1>
+        <img src="https://freesvg.org/img/antontw-Chinese-chess.png" alt="Chinese Chess Logo">
+    </header>
+    <main>
+        <section>
+            <h2>Reviews</h2>
+            <div id="reviews-container">
+                <!-- Reviews will be dynamically generated here -->
+            </div>
+            <form id="review-form">
+                <h3>Add a Review</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="2">2 stars</option>
+                    <option value="1">1 star</option> 
+                </select>
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" required></textarea>
+                <button type="submit">Create</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Haoxiang Xu. All rights reserved.</p>
+    </footer>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
