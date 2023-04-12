@@ -107,6 +107,7 @@ function getCurrentDate() {
     return `${year}-${month}-${day}`;
 }
 
+//Newsletter box to collect email.
 const form = document.getElementById('newsletter-form');
 const emailInput = document.getElementById('email');
 
