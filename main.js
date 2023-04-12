@@ -25,36 +25,6 @@ function enlargeImage(image) {
   }
 }
 
-const form = document.getElementById('newsletter-form');
-const emailInput = document.getElementById('email');
-
-form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the form from submitting normally
-
-  // Validate the email address
-  if (!emailInput.checkValidity()) {
-    alert('Please enter a valid email address.');
-    return;
-  }
-
-  // Submit the form data
-  const formData = new FormData(form);
-  fetch('https://httpbin.org/post', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => {
-    if (response.ok) {
-      alert('Thanks for joining our newsletter!');
-    } else {
-      alert('There was an error submitting the form. Please try again later.');
-    }
-  })
-  .catch(error => {
-    console.error(error);
-    alert('There was an error submitting the form. Please try again later.');
-  });
-});
 
 //reviews.html
 //This part is related to the reviews.html shows the customers' review
@@ -137,6 +107,36 @@ function getCurrentDate() {
     return `${year}-${month}-${day}`;
 }
 
+const form = document.getElementById('newsletter-form');
+const emailInput = document.getElementById('email');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+
+  // Validate the email address
+  if (!emailInput.checkValidity()) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  // Submit the form data
+  const formData = new FormData(form);
+  fetch('https://httpbin.org/post', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+      alert('Thanks for joining our newsletter!');
+    } else {
+      alert('There was an error submitting the form. Please try again later.');
+    }
+  })
+  .catch(error => {
+    console.error(error);
+    alert('There was an error submitting the form. Please try again later.');
+  });
+});
 
 
 

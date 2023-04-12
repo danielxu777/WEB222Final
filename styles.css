@@ -116,14 +116,14 @@ input[type="email"] {
   }
 
 
-  
-  /* Media queries for smaller devices */
+/*   
+  Media queries for smaller devices
   @media screen and (max-width: 480px) {
     .video-container {
       padding-bottom: 75%; /* 4:3 aspect ratio */
-    }
-  }
-  
+    /* }
+  } */
+
   
 
 #reviews-container {
