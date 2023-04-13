@@ -128,7 +128,6 @@ form.addEventListener('submit', function(event) {
 
   // Validate the email address
   if (!emailInput.checkValidity()) {
-    alert('Please enter a valid email address.');
     return;
   }
 
