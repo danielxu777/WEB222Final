@@ -91,7 +91,7 @@ function getRatingStars(rating) {
     return stars;
 }
 
-//Format a date string in the format YYYY-MM-DD to a more readable format
+//Format a date string in the format YYYY-MM-DD
 function formatDate(dateString) {
     const date = new Date(dateString);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -107,12 +107,14 @@ function getCurrentDate() {
     return `${year}-${month}-${day}`;
 }
 
+
+//index.html
 //Newsletter box to collect email.
 const form = document.getElementById('newsletter-form');
 const emailInput = document.getElementById('email');
 
 form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the form from submitting normally
+  event.preventDefault(); 
 
   // Validate the email address
   if (!emailInput.checkValidity()) {
@@ -138,6 +140,8 @@ form.addEventListener('submit', function(event) {
     alert('There was an error submitting the form. Please try again later.');
   });
 });
+
+
 
 
 
