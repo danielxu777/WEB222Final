@@ -138,17 +138,7 @@ form.addEventListener('submit', function(event) {
     method: 'POST',
     body: formData
   })
-  .then(response => {
-    if (response.ok) {
-      alert('Thanks for joining our newsletter!');
-    } else {
-      alert('There was an error submitting the form. Please try again later.');
-    }
-  })
-  .catch(error => {
-    console.error(error);
-    alert('There was an error submitting the form. Please try again later.');
-  });
+
 });
 
 
